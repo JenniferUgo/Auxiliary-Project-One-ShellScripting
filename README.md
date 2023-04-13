@@ -1,2 +1,2 @@
-# Auxiliary-Project-ShellScripting
+# Auxiliary-Project-One-ShellScripting
 Onboarding new Linux users onto a server 
