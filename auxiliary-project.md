@@ -94,29 +94,29 @@ kmaSGj362OnCCNAAAACWRhcmVARGFyZQE=
 >`vi names.csv`
 #### And populate it with random names, on each line.
 
-### We also open the id_rsa.pub and id_rsa files and paste the public key and private key into them respectively.
+### We also open the **id_rsa.pub** and **id_rsa** files and paste the public key and private key into them respectively.
 
 ### Next, we create the developers group, using this command:
 
 >`sudo groupadd developers`
 ### Then we open the **onboard-users.sh** script and edit the public key file path. We replace `root/onboarding-users.sh/id_rsa.pub` with `/home/ubuntu/Shell/id_rsa.pub`
 
-### We set permission on the sript so it can be executable
+### We set permission on the sript so it can be executable:
 >`sudo chmod +x onboarding-users.sh`
-### To run the script, we first change to root user as we will not be able to execute the script as a normal user.
+### To run the script, we first change to root user as we will not be able to execute the script as a normal user:
 >`sudo su`
 
 ### After this we run our script
 >`./onboarding-users.sh`
 
-#### If there are no errors this script has successfully onboarded 20 users to the Linux server and created a home directory, a .ssh folder and copied the public key into the authorized_key file of the users.
+#### If there are no errors, this script has successfully onboarded 20 users to the Linux server and created a home directory, an .ssh folder and copied the public key into the *authorized_key* file of the users.
 <br>
 
 #### Check to see if the users are actually created:
 >`tail -20 /etc/passwd`
 
 ### To check if we have successfully onboarded the users, we try and connect to the server randomly using any of the users.
-ex
+
 ### We open another terminal, cd into downloads.
 >`cd downloads`
 ### Create a private key file and copy the private key into the file.
@@ -134,13 +134,13 @@ ex
 ### Then we cd into .ssh directory
 >` cd .ssh`
 
-#### Then list the content of the directory using ls.
+#### Then list the content of the directory using `ls`.
 
-#### This displays the authorized_keys file.
+#### This displays the *authorized_keys* file.
 
-#### We can do connect randomly using and of the users.
+#### We can also connect randomly using any of the users.
 
-#### Make sure not to give these new users sudo privileges so as not to mess up our server. The users access to the server is limited.
+#### Make sure not to give these new users sudo privileges so as not to mess up our server. The users' access to the server is limited.
 
-### To see onboarding video [click here](https://drive.google.com/file/d/1H-xCmJAv4YX6K8vSbAgrC4ORbo9wrUpb/view?usp=drivesdk)
+### To watch the onboarding video [click here](https://drive.google.com/file/d/1H-xCmJAv4YX6K8vSbAgrC4ORbo9wrUpb/view?usp=drivesdk)
 
